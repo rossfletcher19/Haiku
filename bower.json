@@ -1,12 +1,12 @@
 {
-  "name": "romannum",
-  "description": "A Convertor of numbers to roman numerals",
+  "name": "Haiku",
+  "description": "Checks user input for Haiku",
   "main": "index.js",
   "authors": [
     "Ross Fletcher <rtbfletch@outlook.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/rossfletcher19/romanNum",
+  "homepage": "\"\"",
   "private": true,
   "ignore": [
     "**/.*",

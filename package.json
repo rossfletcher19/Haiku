@@ -1,25 +1,25 @@
 {
-  "name": "romannum",
+  "name": "haiku",
   "version": "1.0.0",
-  "description": "A Convertor of numbers to roman numerals",
+  "description": "#### _Description {2/8/18}_       A javascript based web app that checks whether an entered poem is in fact a Haiku.",
   "main": "index.js",
   "scripts": {
     "test": "karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rossfletcher19/romanNum.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rossfletcher19/romanNum/issues"
-  },
-  "homepage": "https://github.com/rossfletcher19/romanNum#readme",
+  "homepage": "",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^8.0.0",
     "bower-files": "^4.0.0",
     "browser-sync": "^2.23.6",
-    "browserify": "^15.0.0",
+    "browserify": "^15.2.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",

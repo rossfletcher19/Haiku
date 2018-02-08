@@ -1,27 +1,27 @@
-var RomanNum = require('./../js/romancalc.js').romanNumModule;
+import { Haiku } from './../js/haiku.js';
 
 
 $(document).ready(function() {
-  $("#romanNumCalc").submit(function(event){
+  $("#haikuForm").submit(function(event){
     event.preventDefault();
-    var input = parseInt($("#numEntry").val());
-    $("#result").empty();
-    var romanNumCalc = new RomanNum("five");
-    var romeNum = romanNumCalc.converter(input);
-    console.log(romeNum);
-    $("#romeNum").append(romeNum);
+
+    let lineOne = $("#lineOne").val();
+    let lineTwo = $("#lineTwo").val();
+    let lineThree = $("#lineThree").val();
+    debugger;
+    let readHaiku = new Haiku(lineOne, lineTwo, lineThree);
+    readHaiku.readingHaiku();
+    $("#result").append(readHaiku);
   });
 });
 
-$(document).ready(function () {
-  $('#signup').submit(function (event) {
-    event.preventDefault();
-    var email = $('#email').val();
-    $('#signup').hide();
-    $('#romeNum').prepend('<p>Thank you, ' + email + ' has been added to recieve a message!</p>');
-  });
-});
 
-$(document).ready(function(){
-  $('#time').text(moment());
+
+$(document).ready(function() {
+  $("#nameForm").submit(function(event){
+    event.preventDefault();
+    var name = $('#name').val();
+    $('#nameForm').hide();
+    $('#nameResult').prepend('<p>Thank you, ' + name + ' , now enter your Haiku to see if it checks out!!</p>');
+  });
 });
