@@ -8,7 +8,7 @@ $(document).ready(function() {
     let lineOne = $("#lineOne").val();
     let lineTwo = $("#lineTwo").val();
     let lineThree = $("#lineThree").val();
-    debugger;
+
     let readHaiku = new Haiku(lineOne, lineTwo, lineThree);
     readHaiku.readingHaiku();
     $("#result").append(readHaiku);
